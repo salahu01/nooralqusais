@@ -28,11 +28,19 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <motion.a
             href="/"
-            className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-700"
+            className="flex items-center space-x-3"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Noor Al Suqeim
+            <img 
+              src="/lovable-uploads/73bd0d02-a2fa-44af-9a59-2f24cd2b6123.png" 
+              alt="Noor Al Suqeim Logo" 
+              className="h-12 w-auto"
+            />
+            <div className="flex flex-col text-left">
+              <span className="text-xl font-bold text-gray-900">Noor Al Suqeim</span>
+              <span className="text-xs text-gray-600">Electronics and Mobile Phone Trading L.L.C</span>
+            </div>
           </motion.a>
 
           {/* Desktop Navigation */}
