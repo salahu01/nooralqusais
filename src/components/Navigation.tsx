@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -30,8 +31,8 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-panel py-4' : 'bg-transparent py-6'
+      className={`fixed w-full z-50 transition-all duration-300 glass-panel ${
+        isScrolled ? 'py-4' : 'py-6'
       }`}
     >
       <div className="container mx-auto px-4">
