@@ -35,14 +35,14 @@ const ContactFloatingButton = () => {
           >
             <Button
               onClick={scrollToContact}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg w-full"
             >
               Contact Us
             </Button>
             
             <Button
               onClick={redirectToInstagram}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg"
+              className="bg-gradient-to-tr from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white px-4 py-2 rounded-full shadow-lg w-full"
             >
               <Instagram className="mr-2" size={18} />
               Instagram
