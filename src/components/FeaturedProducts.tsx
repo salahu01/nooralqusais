@@ -17,25 +17,25 @@ const categories = [
     id: 1,
     name: "Smartphones",
     description: "Latest flagship smartphones with cutting-edge features",
-    image: "https://images.unsplash.com/photo-1698416776418-7f618adbb8c8?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=800&auto=format&fit=crop",
   },
   {
     id: 2,
     name: "MacBooks",
     description: "Powerful Apple laptops for professional use",
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?w=800&auto=format&fit=crop",
   },
   {
     id: 3,
     name: "Televisions",
     description: "High-definition TVs with smart features",
-    image: "https://images.unsplash.com/photo-1593784991095-a205069533cd?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=800&auto=format&fit=crop",
   },
   {
     id: 4,
     name: "Others",
     description: "Accessories, wearables, and other electronic gadgets",
-    image: "https://images.unsplash.com/photo-1566889730762-fd67d27b1efd?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?w=800&auto=format&fit=crop",
   }
 ];
 
