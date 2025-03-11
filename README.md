@@ -5,6 +5,7 @@
   <img src="public/lovable-uploads/8abea463-fa23-4cd7-84cc-4c6617b45e66.png" alt="Noor Al Suqeim Logo" width="200" style="border-radius: 50%;"/>
 </div>
 
+
 ## Overview
 
 Noor Al Suqeim is a premium electronics and mobile phone trading company based in Dubai, UAE. This website showcases the company's products, services, and provides contact information for potential customers.
