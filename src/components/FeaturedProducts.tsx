@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
@@ -66,7 +65,6 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
           <CardTitle className="line-clamp-2 text-lg">{product.name}</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow">
-          <p className="text-2xl font-bold text-blue-600">{product.price}</p>
         </CardContent>
         <CardFooter>
           <Button 
