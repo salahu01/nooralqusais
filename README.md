@@ -34,10 +34,10 @@ To run this project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/nooralsuqeim/electronics-website.git
 
 # Navigate to the project directory
-cd noor-al-suqeim
+cd electronics-website
 
 # Install dependencies
 npm install
@@ -51,7 +51,7 @@ The application will be available at `http://localhost:8080`.
 ## Project Structure
 
 ```
-noor-al-suqeim/
+electronics-website/
 ├── src/
 │   ├── components/     # UI components
 │   ├── pages/          # Page components
