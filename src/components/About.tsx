@@ -60,7 +60,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/8abea463-fa23-4cd7-84cc-4c6617b45e66.png" 
                 alt="Noor Al Suqeim Logo" 
-                className="object-contain w-4/5 h-4/5 rounded-full" 
+                className="object-contain w-4/5 h-4/5 rounded-xl" 
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl">
