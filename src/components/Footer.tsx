@@ -25,6 +25,17 @@ const Footer = () => {
             <p className="mb-6">
               Your trusted provider of premium electronics and mobile phones in Dubai since 2005.
             </p>
+            <div className="flex space-x-4">
+              <a 
+                href="https://www.instagram.com/nooralsuqeim/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 h-10 w-10 rounded-full flex items-center justify-center transition-colors hover:bg-gray-700"
+              >
+                <span className="sr-only">Instagram</span>
+                <Instagram className="h-5 w-5 text-white" />
+              </a>
+            </div>
           </div>
           
           <div>
