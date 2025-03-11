@@ -1,69 +1,78 @@
-# Welcome to your Lovable project
 
-## Project info
+# Noor Al Suqeim - Electronics and Mobile Phone Trading
 
-**URL**: https://lovable.dev/projects/008dfc77-27b1-4129-8630-1a3e1cf12064
+![Noor Al Suqeim Logo](/lovable-uploads/8abea463-fa23-4cd7-84cc-4c6617b45e66.png)
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+Noor Al Suqeim is a premium electronics and mobile phone trading company based in Dubai, UAE. This website showcases the company's products, services, and provides contact information for potential customers.
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/008dfc77-27b1-4129-8630-1a3e1cf12064) and start prompting.
+- **Modern Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
+- **Interactive UI Elements**: Animated components using Framer Motion for enhanced user experience
+- **Products Showcase**: Display of the company's products and services
+- **About Section**: Information about the company and its values
+- **Contact Form**: Easy-to-use contact form for customer inquiries
+- **Social Media Integration**: Links to the company's Instagram page and Google Maps location
+- **Floating Contact Button**: Quick access to contact options from any part of the website
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
 
-**Use your preferred IDE**
+- **React**: JavaScript library for building user interfaces
+- **TypeScript**: Typed superset of JavaScript for better development experience
+- **Vite**: Next generation frontend tooling for fast development and builds
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development
+- **Framer Motion**: Animation library for React
+- **shadcn/ui**: Beautifully designed components built with Radix UI and Tailwind CSS
+- **React Router**: Library for routing in React applications
+- **React Query**: Data fetching library for React
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Local Development
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To run this project locally, follow these steps:
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone <repository-url>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to the project directory
+cd noor-al-suqeim
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+noor-al-suqeim/
+├── src/
+│   ├── components/     # UI components
+│   ├── pages/          # Page components
+│   ├── lib/            # Utility functions
+│   ├── hooks/          # Custom React hooks
+│   ├── App.tsx         # Main application component
+│   └── main.tsx        # Application entry point
+└── public/             # Static assets
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contact
 
-## What technologies are used for this project?
+For more information about Noor Al Suqeim:
 
-This project is built with .
+- **Instagram**: [@nooralsuqeim](https://www.instagram.com/nooralsuqeim/)
+- **Location**: [Jumeirah - Umm Suqeim 2, Dubai, U.A.E](https://maps.google.com/?q=Jumeirah+-+Umm+Suqeim+2,+Dubai,+U.A.E)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## About Lovable
 
-## How can I deploy this project?
+This project was created with [Lovable](https://lovable.dev/projects/008dfc77-27b1-4129-8630-1a3e1cf12064), an AI-powered web application development platform. To edit this project or create your own, visit the Lovable website.
 
-Simply open [Lovable](https://lovable.dev/projects/008dfc77-27b1-4129-8630-1a3e1cf12064) and click on Share -> Publish.
+## License
 
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+This project is proprietary and owned by Noor Al Suqeim Electronics and Mobile Phone Trading L.L.C.
