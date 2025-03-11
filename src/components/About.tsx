@@ -1,8 +1,8 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
-import { CheckCircle2 } from 'lucide-react';
-import { Instagram } from 'lucide-react';
+import { CheckCircle2, Instagram, MapPin, ExternalLink } from 'lucide-react';
 
 const About = () => {
   const features = [
@@ -64,7 +64,7 @@ const About = () => {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl">
-              <div className="text-center">
+              <div className="flex flex-col space-y-3">
                 <a 
                   href="https://www.instagram.com/nooralsuqeim/"
                   target="_blank"
@@ -73,6 +73,16 @@ const About = () => {
                 >
                   <Instagram className="h-5 w-5" />
                   <span>Follow us on Instagram</span>
+                </a>
+                <a 
+                  href="https://maps.google.com/?q=Jumeirah+-+Umm+Suqeim+2,+Dubai,+U.A.E"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700"
+                >
+                  <MapPin className="h-5 w-5" />
+                  <span>Find us on Google Maps</span>
+                  <ExternalLink className="h-4 w-4" />
                 </a>
               </div>
             </div>

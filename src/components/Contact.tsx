@@ -5,7 +5,6 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import Map from './Map';
 
 const Contact = () => {
   return (
@@ -95,7 +94,7 @@ const Contact = () => {
             <div className="bg-blue-50 p-8 rounded-lg">
               <h3 className="text-xl font-bold mb-8">Contact Information</h3>
               
-              <div className="space-y-6 mb-8">
+              <div className="space-y-6">
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-blue-500 mr-4 flex-shrink-0" />
                   <div>
@@ -121,8 +120,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              
-              <Map />
             </div>
           </motion.div>
         </div>
