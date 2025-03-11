@@ -73,16 +73,24 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold text-white mb-6">Newsletter</h3>
-            <p className="mb-4">Subscribe to our newsletter for the latest products and exclusive offers.</p>
-            <div className="flex gap-2">
-              <Input 
-                placeholder="Your email address" 
-                className="bg-gray-800 border-gray-700 text-white"
-              />
-              <Button className="bg-blue-500 hover:bg-blue-600">
-                <ArrowRight className="h-4 w-4" />
-              </Button>
+            <h3 className="text-lg font-bold text-white mb-6">Contact Us</h3>
+            <ul className="space-y-2 mb-4">
+              <li>Jumeirah - Umm Suqeim 2, Dubai, U.A.E</li>
+              <li>Email: nooralsuqeim@gmail.com</li>
+              <li>Phone: +971 50 308 4007</li>
+              <li>Phone: +971 56 776 1003</li>
+            </ul>
+            <div className="mt-6">
+              <h4 className="text-sm font-medium mb-2">Subscribe to our newsletter</h4>
+              <div className="flex gap-2">
+                <Input 
+                  placeholder="Your email address" 
+                  className="bg-gray-800 border-gray-700 text-white"
+                />
+                <Button className="bg-blue-500 hover:bg-blue-600">
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>

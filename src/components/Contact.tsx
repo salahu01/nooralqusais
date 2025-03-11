@@ -99,15 +99,16 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-blue-500 mr-4 flex-shrink-0" />
                   <div>
                     <p className="font-medium mb-1">Our Location</p>
-                    <p className="text-gray-600">Al Suqeim St, Dubai, United Arab Emirates</p>
+                    <p className="text-gray-600">Jumeirah - Umm Suqeim 2, Dubai, U.A.E</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <Phone className="h-6 w-6 text-blue-500 mr-4 flex-shrink-0" />
                   <div>
-                    <p className="font-medium mb-1">Phone Number</p>
-                    <p className="text-gray-600">+971 4 123 4567</p>
+                    <p className="font-medium mb-1">Phone Numbers</p>
+                    <p className="text-gray-600">+971 50 308 4007</p>
+                    <p className="text-gray-600">+971 56 776 1003</p>
                   </div>
                 </div>
                 
@@ -115,7 +116,7 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-blue-500 mr-4 flex-shrink-0" />
                   <div>
                     <p className="font-medium mb-1">Email Address</p>
-                    <p className="text-gray-600">info@nooralsuqeim.ae</p>
+                    <p className="text-gray-600">nooralsuqeim@gmail.com</p>
                   </div>
                 </div>
                 
