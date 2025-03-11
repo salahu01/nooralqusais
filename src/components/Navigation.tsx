@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -19,7 +18,6 @@ const Navigation = () => {
   const navItems = [
     { label: 'Products & Services', href: '#products' },
     { label: 'About', href: '#about' },
-    { label: 'Support', href: '#support' },
     { label: 'Contact', href: '#contact' }
   ];
 
