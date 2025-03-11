@@ -1,7 +1,7 @@
 
 # Noor Al Suqeim - Electronics and Mobile Phone Trading
 
-![Noor Al Suqeim Logo](/lovable-uploads/8abea463-fa23-4cd7-84cc-4c6617b45e66.png)
+<img src="public/lovable-uploads/8abea463-fa23-4cd7-84cc-4c6617b45e66.png" alt="Noor Al Suqeim Logo" width="200"/>
 
 ## Overview
 
