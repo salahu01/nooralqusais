@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram } from 'lucide-react';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 
@@ -27,16 +26,15 @@ const Footer = () => {
               Your trusted provider of premium electronics and mobile phones in Dubai since 2005.
             </p>
             <div className="flex space-x-4">
-              {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
-                <a 
-                  key={social}
-                  href={`#${social}`}
-                  className="bg-gray-800 h-10 w-10 rounded-full flex items-center justify-center transition-colors hover:bg-gray-700"
-                >
-                  <span className="sr-only">{social}</span>
-                  <div className="h-5 w-5 bg-blue-500 rounded-full"></div>
-                </a>
-              ))}
+              <a 
+                href="https://www.instagram.com/nooralsuqeim/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 h-10 w-10 rounded-full flex items-center justify-center transition-colors hover:bg-gray-700"
+              >
+                <span className="sr-only">Instagram</span>
+                <Instagram className="h-5 w-5 text-white" />
+              </a>
             </div>
           </div>
           

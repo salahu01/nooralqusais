@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { CheckCircle2 } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 const About = () => {
   const features = [
@@ -64,8 +64,17 @@ const About = () => {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl">
-              <p className="text-3xl font-bold text-blue-600 mb-1">18+</p>
-              <p className="text-gray-600">Years of Excellence</p>
+              <div className="text-center">
+                <a 
+                  href="https://www.instagram.com/nooralsuqeim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700"
+                >
+                  <Instagram className="h-5 w-5" />
+                  <span>Follow us on Instagram</span>
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
