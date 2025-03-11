@@ -1,8 +1,5 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from './ui/button';
-import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -46,28 +43,6 @@ const Hero = () => {
             Experience cutting-edge technology with our carefully curated collection
             of premium electronics. Elevate your digital lifestyle today.
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Button
-              size="lg"
-              className="bg-blue-500 hover:bg-blue-600 text-white group"
-            >
-              Explore Products
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-blue-200 hover:bg-blue-50"
-            >
-              Learn More
-            </Button>
-          </motion.div>
         </div>
       </div>
     </div>
