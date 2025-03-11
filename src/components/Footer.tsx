@@ -41,10 +41,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold text-white mb-6">Quick Links</h3>
             <ul className="space-y-4">
-              {['Home', 'Products', 'About', 'Support', 'Contact'].map((item) => (
+              {['Home', 'Products & Services', 'About', 'Support', 'Contact'].map((item) => (
                 <li key={item}>
                   <a 
-                    href={`#${item.toLowerCase()}`} 
+                    href={`#${item.toLowerCase().replace('& ', '')}`} 
                     className="hover:text-white transition-colors hover:underline"
                   >
                     {item}
@@ -54,20 +54,37 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-lg font-bold text-white mb-6">Product Categories</h3>
-            <ul className="space-y-4">
-              {['Smartphones', 'Laptops', 'Televisions', 'Audio', 'Accessories'].map((item) => (
-                <li key={item}>
-                  <a 
-                    href={`#products`} 
-                    className="hover:text-white transition-colors hover:underline"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-bold text-white mb-6">Products</h3>
+              <ul className="space-y-4">
+                {['Smartphones', 'Laptops', 'Televisions', 'Accessories'].map((item) => (
+                  <li key={item}>
+                    <a 
+                      href="#products" 
+                      className="hover:text-white transition-colors hover:underline"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-white mb-6">Services</h3>
+              <ul className="space-y-4">
+                {['Repairs', 'Consultations', 'Protection Plans', 'Cloud Services'].map((item) => (
+                  <li key={item}>
+                    <a 
+                      href="#products" 
+                      className="hover:text-white transition-colors hover:underline"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           
           <div>
