@@ -11,45 +11,35 @@ type ProductProps = {
   category: string;
 };
 
-const products: ProductProps[] = [
+// Organize products by category
+const categories = [
   {
     id: 1,
-    name: "iPhone 15 Pro Max",
-    price: "AED 5,299",
-    image: "https://images.unsplash.com/photo-1695048133142-1a7e07a4a5c7?w=800&auto=format&fit=crop",
-    category: "Smartphones"
+    name: "Smartphones",
+    description: "Latest flagship smartphones with cutting-edge features",
+    image: "https://images.unsplash.com/photo-1698416776418-7f618adbb8c8?w=800&auto=format&fit=crop",
   },
   {
     id: 2,
-    name: "MacBook Pro M3 Max",
-    price: "AED 8,999",
-    image: "https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?w=800&auto=format&fit=crop",
-    category: "MacBooks"
+    name: "MacBooks",
+    description: "Powerful Apple laptops for professional use",
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop",
   },
   {
     id: 3,
-    name: "Samsung Galaxy S24 Ultra",
-    price: "AED 4,899",
-    image: "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=800&auto=format&fit=crop",
-    category: "Smartphones"
+    name: "Televisions",
+    description: "High-definition TVs with smart features",
+    image: "https://images.unsplash.com/photo-1593784991095-a205069533cd?w=800&auto=format&fit=crop",
   },
   {
     id: 4,
-    name: "LG OLED C4 65\"",
-    price: "AED 6,499",
-    image: "https://images.unsplash.com/photo-1593784991095-a205069533cd?w=800&auto=format&fit=crop",
-    category: "Televisions"
-  },
-  {
-    id: 5,
-    name: "Apple Watch Ultra 2",
-    price: "AED 3,399",
+    name: "Others",
+    description: "Accessories, wearables, and other electronic gadgets",
     image: "https://images.unsplash.com/photo-1566889730762-fd67d27b1efd?w=800&auto=format&fit=crop",
-    category: "Others"
   }
 ];
 
-const ProductCard = ({ product }: { product: ProductProps }) => {
+const CategoryCard = ({ category }: { category: typeof categories[0] }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -60,18 +50,16 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
       <Card className="hover-card overflow-hidden h-full flex flex-col">
         <div className="aspect-square relative bg-gray-100 flex items-center justify-center">
           <img 
-            src={product.image} 
-            alt={product.name} 
+            src={category.image} 
+            alt={category.name} 
             className="object-cover w-full h-full"
           />
-          <span className="absolute top-2 left-2 bg-blue-500 text-white px-2 py-1 text-xs rounded-full">
-            {product.category}
-          </span>
         </div>
         <CardHeader>
-          <CardTitle className="line-clamp-2 text-lg">{product.name}</CardTitle>
+          <CardTitle className="text-lg">{category.name}</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow">
+          <p className="text-gray-600 text-sm">{category.description}</p>
         </CardContent>
       </Card>
     </motion.div>
@@ -79,9 +67,6 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
 };
 
 const FeaturedProducts = () => {
-  // Get unique categories
-  const categories = [...new Set(products.map(product => product.category))];
-
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -101,7 +86,7 @@ const FeaturedProducts = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold mt-2 mb-4"
           >
-            Featured Products
+            Product Categories
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -110,13 +95,13 @@ const FeaturedProducts = () => {
             viewport={{ once: true }}
             className="max-w-2xl mx-auto text-gray-600"
           >
-            Explore our premium selection of the latest smartphones, MacBooks, televisions, and more.
+            Explore our premium selection organized by category to find exactly what you need.
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+          {categories.map((category) => (
+            <CategoryCard key={category.id} category={category} />
           ))}
         </div>
       </div>
