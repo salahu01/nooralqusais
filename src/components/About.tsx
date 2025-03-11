@@ -58,9 +58,9 @@ const About = () => {
           >
             <div className="aspect-square rounded-xl overflow-hidden bg-gray-100 flex items-center justify-center">
               <img 
-                src="/placeholder.svg" 
-                alt="Our store" 
-                className="object-cover w-2/3 h-2/3" 
+                src="/lovable-uploads/8abea463-fa23-4cd7-84cc-4c6617b45e66.png" 
+                alt="Noor Al Suqeim Logo" 
+                className="object-contain w-4/5 h-4/5" 
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl">
