@@ -1,7 +1,7 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
-import { Button } from './ui/button';
 
 type ProductProps = {
   id: number;
@@ -66,14 +66,6 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
         </CardHeader>
         <CardContent className="flex-grow">
         </CardContent>
-        <CardFooter>
-          <Button 
-            variant="outline"
-            className="w-full border-blue-500 text-blue-600 hover:bg-blue-50"
-          >
-            View Details
-          </Button>
-        </CardFooter>
       </Card>
     </motion.div>
   );
@@ -116,16 +108,6 @@ const FeaturedProducts = () => {
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-blue-500 text-blue-500 hover:bg-blue-50"
-          >
-            View All Products
-          </Button>
         </div>
       </div>
     </section>
