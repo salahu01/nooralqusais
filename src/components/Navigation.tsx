@@ -31,9 +31,7 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 glass-panel ${
-        isScrolled ? 'py-4' : 'py-6'
-      }`}
+      className="fixed w-full z-50 transition-all duration-300 glass-panel"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
@@ -68,7 +66,7 @@ const Navigation = () => {
                 {item.label}
               </motion.a>
             ))}
-            <Button variant="default" className="bg-blue-500 hover:bg-blue-600" onClick={() => {
+            <Button variant="default" className="bg-blue-500 hover:bg-blue-600 text-white" onClick={() => {
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             }}>
               Contact Us
@@ -80,6 +78,7 @@ const Navigation = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-gray-900"
             >
               {isMobileMenuOpen ? <X /> : <Menu />}
             </Button>
@@ -110,7 +109,7 @@ const Navigation = () => {
                 </a>
               ))}
               <Button 
-                className="bg-blue-500 hover:bg-blue-600 w-full"
+                className="bg-blue-500 hover:bg-blue-600 text-white w-full"
                 onClick={() => {
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                   setIsMobileMenuOpen(false);
