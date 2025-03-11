@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import Map from './Map';
 
 const Contact = () => {
@@ -117,15 +118,6 @@ const Contact = () => {
                   <div>
                     <p className="font-medium mb-1">Email Address</p>
                     <p className="text-gray-600">nooralsuqeim@gmail.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <Clock className="h-6 w-6 text-blue-500 mr-4 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium mb-1">Business Hours</p>
-                    <p className="text-gray-600">Sunday - Thursday: 9:00 AM - 8:00 PM</p>
-                    <p className="text-gray-600">Friday - Saturday: 10:00 AM - 6:00 PM</p>
                   </div>
                 </div>
               </div>
