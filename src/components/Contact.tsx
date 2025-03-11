@@ -1,10 +1,10 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import Map from './Map';
 
 const Contact = () => {
   return (
@@ -91,10 +91,10 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <div className="bg-blue-50 p-8 rounded-lg h-full">
+            <div className="bg-blue-50 p-8 rounded-lg">
               <h3 className="text-xl font-bold mb-8">Contact Information</h3>
               
-              <div className="space-y-6">
+              <div className="space-y-6 mb-8">
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-blue-500 mr-4 flex-shrink-0" />
                   <div>
@@ -130,21 +130,7 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="mt-8">
-                <p className="font-medium mb-4">Follow Us</p>
-                <div className="flex space-x-4">
-                  {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
-                    <a 
-                      key={social}
-                      href={`#${social}`}
-                      className="bg-white h-10 w-10 rounded-full flex items-center justify-center transition-colors hover:bg-blue-100"
-                    >
-                      <span className="sr-only">{social}</span>
-                      <div className="h-5 w-5 bg-blue-500 rounded-full"></div>
-                    </a>
-                  ))}
-                </div>
-              </div>
+              <Map />
             </div>
           </motion.div>
         </div>
