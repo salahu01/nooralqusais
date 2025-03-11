@@ -33,7 +33,7 @@ const Navigation = () => {
             whileTap={{ scale: 0.95 }}
           >
             <img 
-              src="/lovable-uploads/73bd0d02-a2fa-44af-9a59-2f24cd2b6123.png" 
+              src="/lovable-uploads/861ba417-4dc8-49a5-8a47-a391f014e90b.png" 
               alt="Noor Al Suqeim Logo" 
               className="h-12 w-auto"
             />
