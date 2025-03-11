@@ -55,7 +55,6 @@ const Navigation = () => {
             </div>
           </motion.a>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <motion.a
@@ -69,12 +68,13 @@ const Navigation = () => {
                 {item.label}
               </motion.a>
             ))}
-            <Button variant="default" className="bg-blue-500 hover:bg-blue-600">
-              Shop Now
+            <Button variant="default" className="bg-blue-500 hover:bg-blue-600" onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
+              Contact Us
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <Button
               variant="ghost"
@@ -86,7 +86,6 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -110,8 +109,14 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button className="bg-blue-500 hover:bg-blue-600 w-full">
-                Shop Now
+              <Button 
+                className="bg-blue-500 hover:bg-blue-600 w-full"
+                onClick={() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                Contact Us
               </Button>
             </div>
           </motion.div>
