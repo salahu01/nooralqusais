@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
@@ -11,7 +10,6 @@ type ProductProps = {
   category: string;
 };
 
-// Organize products by category
 const categories = [
   {
     id: 1,
@@ -35,7 +33,7 @@ const categories = [
     id: 4,
     name: "Others",
     description: "Accessories, wearables, and other electronic gadgets",
-    image: "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=800&auto=format&fit=crop",
   }
 ];
 
