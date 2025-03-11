@@ -1,44 +1,39 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 type ProductProps = {
   id: number;
   name: string;
-  price: string;
   image: string;
-  category: string;
+  category: "Premium Phones" | "Premium Laptops";
 };
 
 const products: ProductProps[] = [
   {
     id: 1,
     name: "iPhone 15 Pro Max",
-    price: "AED 5,299",
     image: "https://images.unsplash.com/photo-1695048133142-1a7e07a4a5c7?w=800&auto=format&fit=crop",
-    category: "Smartphones"
+    category: "Premium Phones"
   },
   {
     id: 2,
     name: "MacBook Pro M3 Max",
-    price: "AED 8,999",
     image: "https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?w=800&auto=format&fit=crop",
-    category: "MacBooks"
+    category: "Premium Laptops"
   },
   {
     id: 3,
     name: "Samsung Galaxy S24 Ultra",
-    price: "AED 4,899",
     image: "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=800&auto=format&fit=crop",
-    category: "Smartphones"
+    category: "Premium Phones"
   },
   {
     id: 4,
     name: "Dell XPS 17 (2024)",
-    price: "AED 7,499",
     image: "https://images.unsplash.com/photo-1618410320928-142d1c348ee0?w=800&auto=format&fit=crop",
-    category: "Laptops"
+    category: "Premium Laptops"
   }
 ];
 
@@ -72,6 +67,9 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
 };
 
 const FeaturedProducts = () => {
+  const premiumPhones = products.filter(p => p.category === "Premium Phones");
+  const premiumLaptops = products.filter(p => p.category === "Premium Laptops");
+
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -100,14 +98,30 @@ const FeaturedProducts = () => {
             viewport={{ once: true }}
             className="max-w-2xl mx-auto text-gray-600"
           >
-            Explore our premium selection of the latest flagship smartphones, MacBooks, and high-performance laptops.
+            Discover our exclusive collection of premium phones and laptops.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+        <div className="space-y-12">
+          {/* Premium Phones Section */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-6">Premium Phones</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {premiumPhones.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          </div>
+
+          {/* Premium Laptops Section */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-6">Premium Laptops</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {premiumLaptops.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
