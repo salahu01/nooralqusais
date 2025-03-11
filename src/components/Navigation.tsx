@@ -23,8 +23,7 @@ const Navigation = () => {
   const navItems = [
     { label: 'Home', href: '#', onClick: scrollToTop },
     { label: 'Products & Services', href: '#products' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'About', href: '#about' }
   ];
 
   return (
