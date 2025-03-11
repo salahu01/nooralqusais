@@ -2,7 +2,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
-import FeaturedProducts from '../components/FeaturedProducts';
+import ProductsAndServices from '../components/FeaturedProducts';
 import About from '../components/About';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
@@ -13,7 +13,7 @@ const Index = () => {
     <main className="min-h-screen">
       <Navigation />
       <Hero />
-      <FeaturedProducts />
+      <ProductsAndServices />
       <About />
       <Testimonials />
       <Contact />

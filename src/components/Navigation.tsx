@@ -16,6 +16,13 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navItems = [
+    { label: 'Products & Services', href: '#products' },
+    { label: 'About', href: '#about' },
+    { label: 'Support', href: '#support' },
+    { label: 'Contact', href: '#contact' }
+  ];
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -45,15 +52,15 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['Products', 'About', 'Support', 'Contact'].map((item) => (
+            {navItems.map((item) => (
               <motion.a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item.label}
+                href={item.href}
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
               >
-                {item}
+                {item.label}
               </motion.a>
             ))}
             <Button variant="default" className="bg-blue-500 hover:bg-blue-600">
@@ -82,14 +89,14 @@ const Navigation = () => {
             className="md:hidden pt-4"
           >
             <div className="flex flex-col space-y-4">
-              {['Products', 'About', 'Support', 'Contact'].map((item) => (
+              {navItems.map((item) => (
                 <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
+                  key={item.label}
+                  href={item.href}
                   className="text-gray-600 hover:text-gray-900 transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {item}
+                  {item.label}
                 </a>
               ))}
               <Button className="bg-blue-500 hover:bg-blue-600 w-full">
