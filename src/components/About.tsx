@@ -1,10 +1,30 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { CheckCircle2, Instagram, MapPin, ExternalLink } from 'lucide-react';
+import { RunwareService } from '../services/runwareService';
 
 const About = () => {
+  const [apiKey, setApiKey] = useState('');
+  const [imageUrl, setImageUrl] = useState('/placeholder.svg');
+
+  const generateImage = async () => {
+    if (!apiKey) {
+      alert('Please enter your Runware API key. You can get one at https://runware.ai/');
+      return;
+    }
+
+    const runware = new RunwareService(apiKey);
+    try {
+      const result = await runware.generateImage({
+        positivePrompt: "modern electronics store interior, professional photography, high-end retail space with smartphones and laptops on display, clean and minimalist design, warm lighting, 8k, realistic",
+      });
+      setImageUrl(result.imageURL);
+    } catch (error) {
+      console.error('Error generating image:', error);
+    }
+  };
+
   const features = [
     "Wide range of smartphones, tablets, and electronics",
     "Quality products from top global brands",
@@ -56,13 +76,25 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="aspect-square rounded-xl overflow-hidden bg-gray-100 flex items-center justify-center">
+            <div className="aspect-square rounded-xl overflow-hidden bg-gray-100">
               <img 
-                src="/placeholder.svg" 
+                src={imageUrl} 
                 alt="Our store" 
-                className="object-cover w-2/3 h-2/3" 
+                className="object-cover w-full h-full" 
               />
             </div>
+            {imageUrl === '/placeholder.svg' && (
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 space-y-4">
+                <input
+                  type="password"
+                  placeholder="Enter your Runware API key"
+                  className="w-full max-w-xs px-4 py-2 border rounded"
+                  value={apiKey}
+                  onChange={(e) => setApiKey(e.target.value)}
+                />
+                <Button onClick={generateImage}>Generate Store Image</Button>
+              </div>
+            )}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl">
               <div className="flex flex-col space-y-3">
                 <a 
