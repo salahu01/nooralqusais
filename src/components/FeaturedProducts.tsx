@@ -35,10 +35,17 @@ const products: ProductProps[] = [
   },
   {
     id: 4,
-    name: "Dell XPS 17 (2024)",
-    price: "AED 7,499",
-    image: "https://images.unsplash.com/photo-1618410320928-142d1c348ee0?w=800&auto=format&fit=crop",
-    category: "Laptops"
+    name: "LG OLED C4 65\"",
+    price: "AED 6,499",
+    image: "https://images.unsplash.com/photo-1593784991095-a205069533cd?w=800&auto=format&fit=crop",
+    category: "Televisions"
+  },
+  {
+    id: 5,
+    name: "Apple Watch Ultra 2",
+    price: "AED 3,399",
+    image: "https://images.unsplash.com/photo-1566889730762-fd67d27b1efd?w=800&auto=format&fit=crop",
+    category: "Others"
   }
 ];
 
@@ -72,6 +79,9 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
 };
 
 const FeaturedProducts = () => {
+  // Get unique categories
+  const categories = [...new Set(products.map(product => product.category))];
+
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -100,7 +110,7 @@ const FeaturedProducts = () => {
             viewport={{ once: true }}
             className="max-w-2xl mx-auto text-gray-600"
           >
-            Explore our premium selection of the latest flagship smartphones, MacBooks, and high-performance laptops.
+            Explore our premium selection of the latest smartphones, MacBooks, televisions, and more.
           </motion.p>
         </div>
 
