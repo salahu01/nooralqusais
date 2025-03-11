@@ -31,7 +31,9 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed w-full z-50 transition-all duration-300 glass-panel"
+      className={`fixed w-full z-50 transition-all duration-300 glass-panel ${
+        isScrolled ? 'py-2' : 'py-4'
+      }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
