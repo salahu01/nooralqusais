@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -16,8 +15,13 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const navItems = [
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: '#', onClick: scrollToTop },
     { label: 'Products & Services', href: '#products' },
     { label: 'About', href: '#about' },
     { label: 'Contact', href: '#contact' }
@@ -34,7 +38,8 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <motion.a
-            href="/"
+            href="#"
+            onClick={scrollToTop}
             className="flex items-center space-x-3"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -56,6 +61,7 @@ const Navigation = () => {
               <motion.a
                 key={item.label}
                 href={item.href}
+                onClick={item.onClick}
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
@@ -93,8 +99,13 @@ const Navigation = () => {
                 <a
                   key={item.label}
                   href={item.href}
+                  onClick={(e) => {
+                    if (item.onClick) {
+                      item.onClick(e);
+                    }
+                    setIsMobileMenuOpen(false);
+                  }}
                   className="text-gray-600 hover:text-gray-900 transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
                 </a>
