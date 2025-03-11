@@ -6,10 +6,12 @@ import { CheckCircle2 } from 'lucide-react';
 
 const About = () => {
   const features = [
-    "Authorized distributor of premium global brands",
-    "Expert technical support and service",
-    "Competitive pricing with flexible payment options",
-    "Comprehensive warranty and after-sales service"
+    "Wide range of smartphones, tablets, and electronics",
+    "Quality products from top global brands",
+    "Consistently competitive pricing",
+    "Fast delivery across U.A.E",
+    "Intelligent product filtering system",
+    "Complete product information and support"
   ];
 
   return (
@@ -24,13 +26,13 @@ const About = () => {
           >
             <span className="text-blue-600 font-medium">About Us</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-              Excellence in Electronics Since 2005
+              Your Trusted Electronics Partner in Dubai
             </h2>
             <p className="text-gray-600 mb-6">
-              Noor Al Suqeim Electronics and Mobile Phone Trading L.L.C is a premier provider of high-quality electronics in Dubai. With nearly two decades of experience, we've built a reputation for excellence, reliability, and customer satisfaction.
+              MobileShop gives you a chance to quickly and easily find the device you want and have it delivered to your home in no time, regardless of your location, as long as it is in one of the countries of the U.A.E.
             </p>
             <p className="text-gray-600 mb-8">
-              Our mission is to provide our customers with cutting-edge technology products backed by exceptional service. We carefully select each item in our inventory to ensure it meets our rigorous standards for quality and performance.
+              We have been in the business for quite a while now, and in that time we have not only managed to make close relationships with numerous partners, but also to recognize what people need. At MobileShop you will find quality products from top brands at consistently low prices.
             </p>
 
             <div className="space-y-4 mb-8">
