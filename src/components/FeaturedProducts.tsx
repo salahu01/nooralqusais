@@ -3,7 +3,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
-import { ShoppingCart } from 'lucide-react';
 
 type ProductProps = {
   id: number;
@@ -70,9 +69,11 @@ const ProductCard = ({ product }: { product: ProductProps }) => {
           <p className="text-2xl font-bold text-blue-600">{product.price}</p>
         </CardContent>
         <CardFooter>
-          <Button className="w-full bg-blue-500 hover:bg-blue-600">
-            <ShoppingCart className="mr-2 h-4 w-4" />
-            Add to Cart
+          <Button 
+            variant="outline"
+            className="w-full border-blue-500 text-blue-600 hover:bg-blue-50"
+          >
+            View Details
           </Button>
         </CardFooter>
       </Card>
