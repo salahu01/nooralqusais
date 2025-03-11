@@ -21,9 +21,9 @@ const categories = [
   },
   {
     id: 2,
-    name: "MacBooks",
-    description: "Powerful Apple laptops for professional use",
-    image: "https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?w=800&auto=format&fit=crop",
+    name: "Laptops",
+    description: "Powerful laptops for professional and personal use",
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop",
   },
   {
     id: 3,
