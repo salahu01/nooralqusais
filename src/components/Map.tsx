@@ -34,7 +34,7 @@ const Map = () => {
   }, [mapboxToken]);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 mb-0">
       {!mapboxToken && (
         <div className="space-y-2">
           <p className="text-sm text-gray-600">
