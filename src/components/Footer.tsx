@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, Instagram } from 'lucide-react';
 import { Input } from './ui/input';
@@ -90,8 +91,17 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold text-white mb-6">Contact Us</h3>
             <ul className="space-y-2 mb-4">
-              <li>Jumeirah - Umm Suqeim 2, Dubai, U.A.E</li>
-              <li>Email: nooralsuqeim@gmail.com</li>
+              <li>
+                <a 
+                  href="https://2gis.ae/dubai/firm/70000001089098033"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Jumeirah - Umm Suqeim 2, Dubai, U.A.E
+                </a>
+              </li>
+              <li>Email: info@nooralsuqeim.com</li>
               <li>Phone: +971 50 308 4007</li>
               <li>Phone: +971 56 776 1003</li>
             </ul>

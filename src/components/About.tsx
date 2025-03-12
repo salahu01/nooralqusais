@@ -75,13 +75,13 @@ const About = () => {
                   <span>Follow us on Instagram</span>
                 </a>
                 <a 
-                  href="https://maps.google.com/?q=Jumeirah+-+Umm+Suqeim+2,+Dubai,+U.A.E"
+                  href="https://2gis.ae/dubai/firm/70000001089098033"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700"
                 >
                   <MapPin className="h-5 w-5" />
-                  <span>Find us on Google Maps</span>
+                  <span>Find us on 2GIS Maps</span>
                   <ExternalLink className="h-4 w-4" />
                 </a>
               </div>
