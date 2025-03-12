@@ -1,4 +1,5 @@
 
+
 # Noor Al Suqeim - Electronics and Mobile Phone Trading
 
 <div align="center">
@@ -69,7 +70,7 @@ electronics-website/
 For more information about Noor Al Suqeim:
 
 - **Instagram**: [@nooralsuqeim](https://www.instagram.com/nooralsuqeim/)
-- **Location**: [Jumeirah - Umm Suqeim 2, Dubai, U.A.E](https://maps.google.com/?q=Jumeirah+-+Umm+Suqeim+2,+Dubai,+U.A.E)
+- **Location**: [Jumeirah - Umm Suqeim 2, Dubai, U.A.E](https://2gis.ae/dubai/firm/70000001089098033)
 
 ## About Lovable
 
@@ -78,3 +79,4 @@ This project was created with [Lovable](https://lovable.dev/projects/008dfc77-27
 ## License
 
 This project is proprietary and owned by Noor Al Suqeim Electronics and Mobile Phone Trading L.L.C.
+
