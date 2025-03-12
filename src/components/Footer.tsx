@@ -101,7 +101,7 @@ const Footer = () => {
                   Jumeirah - Umm Suqeim 2, Dubai, U.A.E
                 </a>
               </li>
-              <li>Email: nooralsuqeim@gmail.com</li>
+              <li>Email: info@nooralsuqeim.com</li>
               <li>Phone: +971 50 308 4007</li>
               <li>Phone: +971 56 776 1003</li>
             </ul>

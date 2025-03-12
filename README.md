@@ -71,6 +71,7 @@ For more information about Noor Al Suqeim:
 
 - **Instagram**: [@nooralsuqeim](https://www.instagram.com/nooralsuqeim/)
 - **Location**: [Jumeirah - Umm Suqeim 2, Dubai, U.A.E](https://2gis.ae/dubai/firm/70000001089098033)
+- **Email**: info@nooralsuqeim.com
 
 ## About Lovable
 
